@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>科技日报</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!--头部-->
+  <header>
+    <h1 id="top" href="./index.html" title="科技日报">科技日报</h1>
+    <p>探索未来科技，传递创新力量————2025.11.29</p>
+    <!--导航栏-->
+    <nav>
+      <ul>
+        <li><a href="#top">首页</a></li>
+        <li><a href="#news">科技动态</a></li>
+        <li><a href="#global">国际科技</a></li>
+        <li><a href="#forum">科技论坛</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 id="news">今日要闻</h2>
+    <h3>1.量子力学取得突破性进展</h3>
+    <p>宏观量子效应的实证
+      2025年诺贝尔物理学奖授予约翰·克拉克、米歇尔·德沃雷和约翰·马丁尼斯，表彰他们实现的“宏观量子隧穿”与“能量量子化”实验突破。该团队在超导电路中首次观测到由数十亿粒子组成的宏观系统表现出量子叠加态，为超导量子计算奠定了物理基础。中国学者于扬、游建强通过优化量子比特结构，将相干时间提升至毫秒级，直接推动了谷歌、IBM等企业的量子处理器发展。
+    </p><!--图片保存时本身自带照片属性,贸然修改会导致无法显示图片-->
+    <img src="./image/量子力学3.webp" alt="量子力学" title="量子力学" width="500">
+    <p>高阶拓扑相的量子模拟
+      中国科学技术大学潘建伟团队基于“祖冲之二号”超导量子处理器，在6×6量子比特阵列中首次实现并探测到高阶非平衡拓扑相。该成果突破了传统拓扑物态的体-边对应关系，为拓扑量子计算提供了新路径。</p>
+    <img src="./image/量子力学4.webp" alt="量子力学" title="量子力学" width="500">
+    <h3>2.量子计算突破新高度</h3>
+    <p>根据发表于《自然》杂志的研究，加州理工学院与谷歌团队利用“悬铃木”量子处理器构建了9量子比特的微观虫洞模型，通过量子纠缠实现了量子态的跨系统传递，验证了全息原理在调和量子力学与广义相对论中的可行性。</p>
+    <h3 id="global">3.行业数据</h3>
+    <table border="1">
+      <thead>
+        <tr><!--这是单元行,没有行就没有单元格<th>和<td>-->
+          <th>领域</th>
+          <th>投资额(亿美元)</th>
+          <th>增长率</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>人工智能</td>
+          <td>1000</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td>量子计算</td>
+          <td>500</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td>5G网络</td>
+          <td>800</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>区块链</td>
+          <td>600</td>
+          <td>12%</td>
+        </tr>
+        <tr>
+          <td>虚拟现实</td>
+          <td>700</td>
+          <td>18%</td>
+        </tr>
+        <tr>
+          <td>增强现实</td>
+          <td>900</td>
+          <td>25%</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>4.读者互动</h3>
+    <P>您最关注的领域是?</P>
+    <!--表格制作!!!!!!!!-->
+    <form action="">
+      <ul>
+        <li><label><input type="radio" id="domain" name="domain" value="ai">人工智能</label></li>
+        <li><label><input type="radio" id="domain" name="domain" value="qc">量子计算</label></li>
+        <li><label><input type="radio" id="domain" name="domain" value="5g">5G网络</label></li>
+        <li><label><input type="radio" id="domain" name="domain" value="blockchain">区块链</label></li>
+        <li><label><input type="radio" id="domain" name="domain" value="vr">虚拟现实</label></li>
+        <li><input type="radio" id="domain" name="domain" value="ar">增强现实</li>
+    </form>
+    <p id="forum">留下您的观点:</p>
+    <textarea name="view" cols="40" rows="10"></textarea>
+    <input type="submit" value="提交">
+    <h3>5.未来十年科技趋势</h3>
+    <video src="./image/未来科学.mp4" width="900" controls poster="./image/量子力学4.webp" autoplay
+      muted></video><!--视频可加上封面poster和自动播放autoplay(要加静音muted)-->
+  </main>
+  <footer>
+    <p>
+      <未来十年科技趋势>讲座节选
+    </p>
+    <p>2025 科技日报社版权所有</p>
+    <p>京ICP备2025000000号-1</p>
+    <p>联系我们：<a href="mailto:contact@example.com">contact@example.com</a></p>
+    <p>关注我们：<a href="https://www.facebook.com/yourpage">Facebook</a>, <a
+        href="https://www.twitter.com/yourpage">Twitter</a></p>
+    <p>&copy; 2025 科技日报. All rights reserved.</p>
+    <p>地址：北京市海淀区科技大厦1001室</p>
+    <a href="#top">返回顶部</a>
+  </footer>
+  <!-- 设计思路<ul>
+    <li>
+      1、整体：有头部header，主体main，尾部footer
+      2、细节：
+        a.头部header：包含h1
+        b.主体main：包含段落p,列表，表单，label标签，textarea的使用，视频
+        c.尾部footer：超链接，邮件链接，锚点链接，css的 滑动属性
+        3、编码：物料准备，编写，调试，预览
+    </li>
+  </ul> -->
+</body>
+
+</html>
